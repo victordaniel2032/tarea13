@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Web con Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<audio autoplay >
+  <source src="audio/Five Nights at Freddys 2 Song [ Instrumental ] - The Living Tombstone (FNAF2).mp3" type="audio/mp3">
+  Tu pc no aguanta la buena musica.
+  
+</audio>
+<style>
+    body{
+        background-image: url(img/fondo.jpg);
+        background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    }
+    p{
+      color: white;
+    }
+    
+</style>
+<body>
+  <!-- Contenedor principal -->
+  <div class="container-fluid">
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/foxy1.jpg" class="d-block w-100" alt="Slide 1" >
+        </div>
+        <div class="carousel-item">
+          <img src="img/foxy2.jpg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/foxy3.jpg" class="d-block w-100" alt="Slide 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">libros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Acerca de nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="row my-4">
+      <div class="col-md-6">
+        <h3>Foxy</h3>
+        <p>Poderes y Habilidades:
+          Capacidades Físicas Sobrehumanas.
+          Fisiología Inorgánica: Tipo 1.
+          Maestría del Sigilo: Se oculta fácilmente en la oscuridad, siendo casi imposible de ver para el guardia.
+          Visión Nocturna: Puede guiarse perfectamente a través de la densa oscuridad de la pizzería.</p>
+        <div class="d-flex align-items-center">
+          <img src="img/foxylogo.jpg" class="img-fluid me-2" alt="Imagen pequeña">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-star"></i> Botón
+          </button>
+          <h3>Datos curiosos</h3>
+          <p>Foxy (conocido también como Foxy The Pirate) es uno de los cinco animatrónicos originales de los juegos, usados como entretenimiento en Freddy Fazbear's Pizza. Es reconocido por poseer su propia atracción, la Pirate Cove (Bovedilla del pirata), separándole de la banda principal. Sin embargo esta atracción, así como su animatrónico estrella, siempre estuvieron Fuera de Servicio por razones no muy claras.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="img/logito (1).jpg" class="img-fluid" alt="Imagen grande">
+        <p class="mt-2" >El animatronico mas querido de la franquicia de fnat</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
